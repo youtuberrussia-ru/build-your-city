@@ -1,0 +1,29 @@
+config_version=5
+
+[application]
+
+config/name="Построй свой город"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0.043, 0.043, 0.102, 1)
+
+[autoload]
+
+Settings="*res://settings.gd"
+GameState="*res://game_state.gd"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+window/energy_saving/keep_screen_on=false
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
